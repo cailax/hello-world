@@ -1,0 +1,105 @@
+Unix Architecture
+-kernel - core component/control
+-shells - UI (CLI&GUI)
+-system utility
+-app programs
+Flavors of Unix
+-Linux
+-Solaris
+-SunOS
+-Minix
+-NetBSD
+-LynxOS
+-SuSE
+-UnixWare
+-centOS
+
+logging in out
+text based terminal TTY
+to log out- type exit
+graphical terminals - typical login
+
+user management accounts 
+root - superuser
+system - 
+user
+group
+
+directory structure - tree structure wc is anchored at a special top level dir known as the root, designated by a / 
+r- recursive
+f- force
+
+hard link allows user to create 2 exact files wo having to duplicate the data on disk
+-link to other file
+$ln filename linkname
+$ln -s filename linkname
+
+soft link similar to hard link used to link to an already existing file, very diff in its implementation.
+- redirecting for long file names
+
+inode data strusture used to represent a filesystem object, wc can be one of various things including file/dir
+
+specifying multiple filenames:
+??? matches all three character filenames
+?ell? matches aany 5 char filenames with 'ell' in the middle
+he* matches any filename beginning with 'he'
+
+user
+group
+other
+
+permission
+read
+write
+execute
+
+2 ways to change permissions
+-symbolic mode
+-absolute permission
+format: $ chmod options files
+chmod u g o
++ - =
+example: $chmod o+wx README.txt
+
+find command
+format: $find
+-p never follow symbolic links
+
+which-exe
+locate - all text
+grep - finding text files
+sed - replace texts
+ex. sed's/Nick/John/g'report.txt
+s-sub g-all occurence
+awk- 
+sort- ascending order
+sort -r - descending
+uniq - sorting also, but removes duplicate adjacent lines
+
+file compression and back up
+tar for archiving?
+-c 
+-v vorboss
+-f file
+-x extract
+gzip - long loading
+-gunzip unzip
+compress
+install: yum install compress
+readable sa win
+
+ps- foreground processes stop: ctrl c
+ps-ef- background processes stop: kill + process id
+
+pipes - run multiple commands all at once
+
+vi -plain white
+command - perform actions
+input - insterted or overwrite existing text
+esc - to go back
+i - insert
+a - append
+vim- color coding-linux
+#!/bin/sh
+vim save - :wq!
+green - executable files

@@ -1,0 +1,34 @@
+VPN, STACK, CHEF
+Open instances right away.
+
+54.177.69.133
+-OpenVPN Server
+	*un: openvpn
+	*pw: openvpn123
+
+10.10.1.102
+-Private IP
+
+54.177.235.232
+-public ip
+-PUTTY: ec2@
+-DevOps Platform Site
+
+vpc-0e8c6f69
+-VPC ID
+-to search vpn, stack, chefServer
+
+subnet-3b27a45c
+-subnet
+
+DTS-Laxa-AdopSecurityGroup-PFT0AYB2OW96
+-Security Group
+
+gitlab token
+e73af0297f8b9ebaa78d12535003255a3294df5d
+
+vpc-59ae453e
+-vpcid
+
+subnet-f1da5196
+-subnet

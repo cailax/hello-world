@@ -1,0 +1,11 @@
+GETOPTS - to parse arguments passed to shell scripts
+
+VARIABLE ASSIGNMENT - sets and/or re-sets the value stored in the storage locations denoted by a variable name.
+-it copies a value into the variable
+
+COMMAND SUBSTITUTION - reaassigns the output of a command or multiple commands
+-literally plugs the command output into another context.
+
+PRINTING COMMANDS - lp or plr commands
+LP - complicated printing functions
+

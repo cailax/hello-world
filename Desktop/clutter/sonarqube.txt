@@ -1,0 +1,21 @@
+SONARQUBE - analysis
+-allows managing, tracking and improving of source code
+
+5 severities of an issue
+blocker
+critical
+major
+minor
+info
+
+quakity gates -can i deliver my project to production today or not?
+
+code viewer
+displays source code of file and its high level statistics
+
+sonar-scanner.bat
+
+conf-
+sonnar-scanner prop-
+get: project key
+proj name

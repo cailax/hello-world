@@ -1,0 +1,33 @@
+TO USE NEXUS
+
+administration
+server
+-in app server sttings change the base url to your public ip address(http://54.177.235.232/nexus)
+
+got jenkins to install nexus artifact uploader
+
+go back to nexus config
+in build, nexus artif uploader,
+NEXUS2
+HTTP
+nexus:8081/nexus
+add: credentials
+grouid: DTSActivity
+version1
+repo snapshot
+add arti
+ArtiId CurrencyConv
+typ war
+file /var/jenkins_home/Activity_Nexus/workspace/target/CurrencyConverter.war
+
+tapos connect mo na lahat
+punta u jenkins got to ur maven
+add post build actions
+add build other proj
+*sonarqube
+save
+tapos sa sonarqube naman
+add postbuild actions
+build other proj
+project to build is
+*nexus

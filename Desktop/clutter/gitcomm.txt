@@ -1,0 +1,38 @@
+Git three stages
+committed
+modified
+staged
+
+mkdir DTSGit
+cd DTSGit
+echo "# GitActivity" >> README.md
+ls
+git init
+git status
+git add README.md
+git status
+git commit -m "first commit"
+*git config --global user.email "erickalaxa@gmail.com"
+*git commit -m "first commit"
+git remote add origin https://github.com/cailax/gitActivity.git
+$ git push -u origin master
+
+PULL AND PUSH
+$ git clone https://github.com/mmdcentino/GitActivity.git
+ls
+$ cd GitActivity
+ls
+$ git pull https://github.com/mmdcentino/GitActivity.git
+$ git add gittest
+$ git commit -m "bulaga"
+$ git push origin master
+$ vi gittest
+$ git pull origin master
+$ git push origin master
+
+
+
+gitlab
+
+jenkins - new item - pangalanan() - freestyle - (maven[kasi java] for coding)
+tapos balik sa home ng jenkins - manage jenkins - config system -

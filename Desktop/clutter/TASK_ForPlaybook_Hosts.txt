@@ -1,0 +1,36 @@
+TASKS
+PLAYBOOK.YML
+---
+- hosts: target-machine
+  tasks:
+    - name: Check if samplefolderusingshellmod already exists
+      stat:
+        path: "~/samplefolderusingshellmod"
+      register: shellfolderexists
+    - debug: var=shellfolderexists
+
+    - name: Create folder using Shell Module
+      shell: "mkdir ~/samplefolderusingshellmod"
+      when: shellfolderexists.stat.exists!=true
+
+    - name: Create folder using File Module
+      file: state=directory path="~/samplefolderusingfilemod"
+
+    - name: Create files inside filemod folder
+      file: state=touch path="~/samplefolderusingfilemod/ {{ item }}"
+      with_items:
+        - cai 1
+        - cai 2
+        - cai 3
+
+    - name: Create files inside shellmod folder
+    file: state=touch path "~/samplefolderusingshellmod/{{ item }}_{{ item }}"
+    with_items:
+       - { filename: 'sample1', type: 'dev' }
+       - { filename: 'sample3', type: 'test' }
+
+
+
+HOSTS
+[target-machine]
+13.57.47.105

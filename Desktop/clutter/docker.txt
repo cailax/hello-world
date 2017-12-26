@@ -1,0 +1,22 @@
+docker rm -f <container_name> or <container_id>
+docker rmi -f <image_name> or <image_id>
+
+docker build --build-arg lastname=laxa -t mycontainer/myname:1.0 .
+
+yum install wget -y
+yum install -y /opt/jdk
+
+wget (dl link)
+ls
+
+FROM mycontainer/myname:1.0
+
+centos/jdk:0.0.1
+
+
+
+
+tomcat
+
+
+FROM centos/jdk:0.0.1

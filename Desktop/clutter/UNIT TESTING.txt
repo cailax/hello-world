@@ -1,0 +1,64 @@
+UNIT TESTING
+smalliest component in programming
+*procedural
+*object oriented programming
+
+Purpose: code is consistent 
+isolate each part of program
+shows individual parts are functing as expected
+
+integrated development enviroment(IDE) used to carry out unit testing
+
+IMPLEMENATION OF SDLC with TDD Test Driven Development
+TDD(methodology) - approach for testing code
+written before the code development
+
+STAGE CONTAINMENT achieved by using v model and tdd where the defects are identified on the same stage where they originate
+-error identification
+-fix errors
+-helps to exhibit defect finding pattern
+
+Vmodel -verifies and validates the major deliverables
+
+TECHNIQUES and ENVIRONMENT
+Unit testing envi - resemble the real running environment
+
+Unit Test should cover the following aspects:
+*code units
+*Branches
+*Paths
+*Cycles
+-WHITEBOX- sees codes coz for testing
+
+Branch coverage - 
+if-else-endif
+case-when-endcasae
+while-endwhile
+
+CONDITION COVERAGE- true and false condition, similar to branch coverage
+boundary conditions
+if else cond
+
+LOOP
+for
+while
+do-while
+
+LOGIC PATH need to test logical path of current program unit
+
+Interface Testing basis for assembly test and it is under the scope of unit test.
+
+DELIVERABLES documented information and knowledge produced as the result of a methodology process
+*provides docu
+completetion of each phase
+traceability
+quality in task performed
+analysis of issue
+
+TESTING FRAMEWORK TOOLS
+*manual - 
+*automated - automation tools used
+*static - where software not used
+-dry run test
+*dynamic - software, where u need to provide input values
+

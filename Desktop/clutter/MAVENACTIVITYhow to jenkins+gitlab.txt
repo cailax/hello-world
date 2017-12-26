@@ -1,0 +1,19 @@
+jenkins- manage jenkins- config sys- gitlab section*GitLab Connection*http://gitlab/gitlab/*ADOP Gitlab root token
+save-
+
+jenkins
+source code management- git - http://gitlab/gitlab/cailax/CurrencyConverterDTS.git 
+
+jenkins ADOP
+build triggers- check mo yung build when a change is pushed to GitLab.
+Build environmet - check mo delete worksapce b4 build starts
+Build
+Invoke top-level Maven targets- type ADOP Maven- goals:package
+
+post build actions
+Archive the artifacts- **/*.war
+
+build now, hintay mo mag blue yung build.
+then sa build, console output.
+
+
