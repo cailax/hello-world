@@ -1,0 +1,30 @@
+CHANGE OF VARIABLE
+
+FOLDER/DEFAULT
+samplefoldername: 'samplefolderusingshellmod'
+filefoldername: 'samplefolderusingshellmod'
+
+FOLDER/TASK
+- name: Check if shellfoldername already exists
+      stat:
+        path: "~/{{ shellfoldername }}"
+      register: shellfolderexists
+    - debug: var=shellfolderexists
+
+    - name: Create folder using Shell Module
+      shell: "mkdir ~/{{ shellfoldername }}"
+      when: shellfolderexists.stat.exists!=true
+
+    - name: Create folder using File Module
+      file: state=directory path="~/{{ filefoldername }}"
+
+
+
+JENKINS>CONFIG>BUILD>EXEC SHELL
+ansible --version
+docker --version
+#ssh centos@13.57.47.105 date
+#echo "[target-machine]" > hosts
+#echo "10.10.1.102" >> hosts
+#cat $WORKSPACE/hosts
+ansible-playbook $WORKSPACE/playbook.yml -i $WORKSPACE/hosts -u centos --extra-vars "shellfoldername=overridevalue"
